@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="background_image">
+    <center><h1 class="heading_1"><b>COVID-19 Tests</b></h1></center>
+    <center><h1 class="heading_2">Fit to Fly</h1></center>
+    <center><h1 class="heading_3"><b>SPECIAL OFFER</b></h1></center>
+    <center><h2 class="heading_4">LATERAL FLOW TEST $3.50*</h2></center>
+    <center><h5 class="heading_5">UK HEALTH AGENCY GOVERNMENT APPROVED</h5></center>
+    <br><br><br><br><br>
+</div>
+<div class="background_1">
+    <center><p class="para_1"><b>YOU CAN SELECT YOUR TEST TYPE</b></p></center>
+    <center><p class="para_2">All packages includes certificates</p></center>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-3">
+                    <center><p class="para_3"><b>LATERAL FLOW <br> TEST</b></p></center>
+                    <center><label class="label_1"><p class="para_4">$ 3.50</p></label></center>
+                </div>
+                <div class="col-md-3">
+                    <center><p class="para_3"><b>PRE DEPARTURE/RETURN <br> TO UK LETRAL FLOW</b></p></center>
+                    <center><label class="label_1"><p class="para_4">$ 28</p></label></center>
+                </div>
+                <div class="col-md-3">
+                    <center><p class="para_3"><b>COVID-19PCR TEST <br> (NON TRAVEL)</b></p></center>
+                    <center><label class="label_1"><p class="para_4">$ 55</p></label></center>
+                </div>
+                <div class="col-md-3">
+                    <center><p class="para_3"><b>ANTIGEN TEST FOR <br> TRAVEL</b></p></center>
+                    <center><label class="label_1"><p class="para_4">$ 32</p></label></center>
+                </div>
+        </div>
+        <br><br><br>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-2">
+                        <center><p class="para_3"><b>DAY 2 <br> TEST</b></p></center>
+                        <center><label class="label_1"><p class="para_4">$ 58</p></label></center>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-2">
+                        <center><p class="para_3"><b>COVID-19PCR TEST <br> (NON TRAVEL)</b></p></center>
+                        <center><label class="label_1"><p class="para_4">$ 58</p></label></center>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-2">
+                        <center><p class="para_3"><b>ANTIGEN TEST FOR <br> TRAVEL</b></p></center>
+                        <center><label class="label_1"><p class="para_4">$ 58</p></label></center>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+<div class="background_2">
+    <div class="container-fluid">
+        <div class="row padd_1">
+                <div class="col-md-4">
+                    <center><i class="bi bi-arrow-clockwise"></i></center>
+                    <center><p class="para_5"><b>QUICK <br> TURNAROUND RESULTS</b></p></center>
+                </div>
+                <div class="col-md-4">
+                    <center><i class="bi bi-clock"></i></center>
+                    <center><p class="para_5"><b>24/7 <br> SUPPORT</b></p></center>
+                </div>
+                <div class="col-md-4">
+                    <center><i class="bi bi-check-circle-fill"></i></center>
+                    <center><p class="para_5"><b>TRUSTED <br> PROFESSIONAL</b></p></center>
+                </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+<div class="background_3">
+    <div class="container">
+        <img class="img_1" src="{% static 'images/logos.png' %}">
+    </div>
+    <br><br>
+</div>
+<div class="background_4">
+    <center><h1 class="heading_6">EMAIL: contact@thepcrtest.co.uk</h1></center>
+    <center><h1 class="heading_7"><b>TO PLACE YOUR ORDER TODAY</b></h1></center>
+    <hr>
+    <br>
+</div>
+<div class="background_6">
+    <div class="container">
+        <center><h1>REGISTER</h1></center>
+        <form method="POST">
+                {% csrf_token %}
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Name</label><br>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="col-md-4">
+                    <label>Phone</label><br>
+                    <input class="form-control" type="number" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="col-md-4">
+                    <label>Email</label><br>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                            <center><input class="form-control btn_1" type="submit" name="submit" value="Submit"></center>
+                    </div>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+            </div>
+    </form>
+    </div>
+    <br>
+</div>
+<div class="background_5">
+    <center><h3 class="heading_8"><b>Discount for Corporate/Business orders*</b></h3></center>
+    <center><h3>MOQ apply</h3></center>
+    <br>
+    <center><h4>Danzo Group Ltd, 82A, James Carter Road,</h4></center>
+    <center><h4>Mildenhall, Suffolk. IP28 7DE</h4></center>
+    <center><p>You may <u>unsubscribe,</u> if you no longer wish to recieve emails.</p></center>
+    <center>All Rights Reserved.</center>
+</div>
+{% endblock content %}
